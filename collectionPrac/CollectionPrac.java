@@ -12,7 +12,10 @@ public class CollectionPrac {
     public static void main(String[] args) {
     //    =============List========
        List<Integer> li = new ArrayList<>();
-       
+       // List<-type-> list = new  ArrayList<>();
+            li.clear();// remove list
+            li.remove(li);//removes on element
+            li.add(1);
             li.add(1);
             li.add(2);
             li.add(3);
@@ -20,12 +23,13 @@ public class CollectionPrac {
        
        
         for(int n: li) {
-                System.out.println(n);
+                System.out.println(n*2);
               }
 
-        //========Hash Set============      
+        //========Hash Set ============      
 
         Set<Integer> hs = new HashSet<>();
+        hs.add(1);      
         hs.add(1);
         hs.add(2);
         hs.add(5);
